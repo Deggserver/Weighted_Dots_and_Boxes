@@ -5,15 +5,12 @@ public class Node {
     private Random random_generator = new Random();
     private boolean[][] dots; //This represents the
     private int[][] boxes; //The boxes that give points
-    private int plies;
 
     /**
      *
-     * @param plies
      * @param size_board    in terms of boxes
      */
-    public Node(int plies, int size_board){
-        this.plies = plies;
+    public Node(int size_board){
         this.dots = this.generate_point_array(size_board);
         this.boxes = this.generate_box_values();
     }
