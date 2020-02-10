@@ -24,6 +24,17 @@ public class minimax {
         return 0;
     }
 
+    /**
+     *
+     * @param state the leaf we are assessing
+     * @return     {+int -> Player1 is winning
+     *              -int -> Player2 is winning
+     *              0    -> Neither player is winning}
+     */
+    private int evaluation_function(Node state){
+        return state.getPlayer1_score() - state.getPlayer2_score();
+    }
+
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
