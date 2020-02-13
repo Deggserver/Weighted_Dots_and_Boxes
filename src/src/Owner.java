@@ -1,3 +1,5 @@
+package src;
+
 /**
  * possestion : 0 == unowned
  *              1 == player1 owned

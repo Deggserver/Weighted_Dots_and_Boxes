@@ -1,22 +1,13 @@
+package src;
+
 public class Edge {
-    private int x, y;
     private int possession;
 
-    public Edge(int x, int y){
-        this.x = x;
-        this.y = y;
+    public Edge(){
         this.possession = 0;
     }
 
-    public int getX() {
-        return x;
-    }
-
-    public int getY() {
-        return y;
-    }
-
-    /**
+     /**
      *
      * @return  0 for unowned
      *          1 for player1
